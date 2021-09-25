@@ -1,0 +1,79 @@
+body {
+    background-color:burlywood;
+}
+#container {
+    
+    background-color:rosybrown;
+    
+    animation: myfirst 5s linear 2s infinite alternate;
+  }
+  @keyframes myfirst {
+    0%   {background-color:lavender; }
+    50%  {background-color:lightgreen; }
+    100%  {background-color:lightblue; }
+    
+    
+  }
+.dog_image {
+    width: 15vw;
+    border:1px solid red;
+}
+h1{
+    font-size: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dog_info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 5px solid black;
+    margin: 2%;
+    border-radius: 30px;
+    padding: 20px;
+    animation: my 4s linear 2s infinite alternate;
+}
+@keyframes my {
+    0%   {border: 5px solid red;
+
+     }
+    50%  {border: 5px solid orangered; }
+    100%  {border: 5px solid green;}
+    
+    
+  }
+.info_container h3{
+    font-family:'Times New Roman', Times, serif;
+    font-size: xx-large;
+
+}
+.info_container{
+    font-family: cursive;
+}
+#dogs {
+    width: 60vw;
+    z-index:999;
+    padding: 30px;
+    
+}
+
+#container{
+    position: relative;
+    height: 100%;
+    border:4px solid purple;
+    border-radius: 60px;
+}
+#container:after {
+    border:4px solid purple;
+    border-radius: 60px;
+    content:'';
+background-color:red;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity: 0.2; /* Here is your opacity */
+}
+
